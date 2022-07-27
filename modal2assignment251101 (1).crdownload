@@ -1,0 +1,219 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[11]:
+
+
+number=int(input('enter the number:'))
+if number<0:
+    print('given number is nagative:')
+elif 0<number:
+    print('given number is positiven:')
+else:
+    print('given number isinp zero:')
+
+
+# In[24]:
+
+
+num=int(input('enter the number:'))
+fact=1
+i=1
+while i<=num:
+    fact=fact*i
+    i+=1
+print('enter the fact:',fact)
+
+
+# In[26]:
+
+
+a=0
+b=1
+i=1
+while i<11:
+    c=a+b
+    print(f'{c}')
+    a=b
+    b=c
+    i+=1
+
+
+# In[32]:
+
+
+x=6
+y=9
+x,y=y,x
+print("swap the numbers x:",x)
+print("swap the numbers y:",y)
+
+#temp variable
+a=int(input("enter the value:"))
+b=int(input("enter the value:"))
+a,b=b,a
+print("swap the nuber a:",a)
+print("swap the nuber b:",b)
+
+
+# In[34]:
+
+
+num=int(input("enter the number:"))
+if num%2==0:
+    print("num is even")
+else:
+    print("num is odd")
+
+
+# In[43]:
+
+
+#v0wel=['a','p','p','l','e']
+letter=input("enter the letters:")
+if (letter=='a'or letter=='p'or letter=='p'or letter=='l'or letter=='e'):
+    print("letter is vowel.")
+else:
+    print("letter is not vowel.")
+    
+
+
+# In[48]:
+
+
+a=int(input('enter the number first:'))
+b=int(input('enter the number second:'))
+c=int(input('enter the number third:'))
+sum=a+b+c
+if a==b or b==c or c==a:
+    print('sum is zero')
+else:
+    print('addition:',sum)
+
+
+# In[51]:
+
+
+x=int(input('enter the number first:'))
+y=int(input('enter the number second:'))
+if x==y or x+y==6:
+    print ('it is return true.')
+else:
+    print('it is return false.')
+
+
+# In[53]:
+
+
+#sum of the first n positiv intigers
+n=int(input("enter the number:"))
+sum=n*(n+1)/2
+print(sum)
+
+
+# In[1]:
+
+
+#HOW MEMORY IS MANAGED IN PYTHON?
+    ANS-python memory is managed by python privte heap space.
+    understanding memory allocation is important to any software devloper as writing efficient cod 
+    means writing a memory-efficientcode.
+
+
+# In[2]:
+
+
+#purpose continu statement in python?
+The continu keyword is used to end the current iteration in a for loop (or a while loop),
+and continues to the next iteration.
+
+
+# In[8]:
+
+
+#calculate the lengthof a string
+str1='pratixa'
+print(len(str1))
+
+
+# In[10]:
+
+
+#count the number of character
+str1='may name is pratixa'
+str1.count('a')
+
+
+# In[11]:
+
+
+#what are negative indexes and why are they used?
+As we know, indexes are used in arrays in all the programming languages. 
+We can access the elements of an array by going through their indexes.
+
+
+# In[35]:
+
+
+#count occurrences of a substring in a string.
+str1='may contry is rich in minerals and gams'
+print(str1.count('r'))
+
+
+# In[36]:
+
+
+#count the occurrences of each word in a given sentence
+str1='may village is rumla'
+str1.count('village')
+
+
+# In[53]:
+
+
+#to get a single string from two given string.
+str1='may village in india'
+print(str1[0:2])
+
+
+# In[2]:
+
+
+#space and swap the first two characters of each string.
+def str_swap(a, b):
+    new_a = b[:2] + a[-1]
+    new_b = a[:2] + b[-1]
+    return new_a + ' ' + new_b
+  
+print(str_swap('abc', 'xyz'))
+
+
+# In[16]:
+
+
+#python function to insert a string in the middle of a string.
+str1='lerning python in tops'
+print(str1[8:14])
+
+
+# In[3]:
+
+
+#reverses a string if its length is a multiple of 4.
+str1=input('enter the string:')
+if len(str1)%4==0:
+    print(str1[::1])
+else:
+    print(str1)
+
+
+# In[4]:
+
+
+str=input('enter the string:')
+if len(str)<2:
+    print('empty string')
+else:
+    ns=str[:2]+str[-2:]
+    print(ns)
+
